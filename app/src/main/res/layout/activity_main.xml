@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewEscolhaApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Escolha do App"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEscolhaApp"
+        app:srcCompat="@drawable/padrao" />
+
+    <TextView
+        android:id="@+id/textViewEscolhaUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Escolha sua arma: "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewResultado" />
+
+    <ImageView
+        android:id="@+id/imageViewPedra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:onClick="opcaoPedra"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewTesoura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEscolhaUser"
+        app:srcCompat="@drawable/pedra_jogadorpeq" />
+
+    <ImageView
+        android:id="@+id/imageViewPapel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="opcaoPapel"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewTesoura"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPedra"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPedra"
+        app:srcCompat="@drawable/papel_jogadorpeq" />
+
+    <ImageView
+        android:id="@+id/imageViewTesoura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="opcaoTesoura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPedra"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPapel"
+        app:srcCompat="@drawable/tesoura_jogadorpeq" />
+
+</android.support.constraint.ConstraintLayout>
