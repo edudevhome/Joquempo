@@ -7,21 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/textViewEscolhaApp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginRight="26dp"
-        android:background="@color/colorPrimary"
-        android:onClick="limpar"
-        android:text="Limpar"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="541dp"
+        android:text="Escolha do App"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageViewResultado"
@@ -70,46 +69,6 @@
         app:layout_constraintStart_toEndOf="@+id/imageViewPedra"
         app:layout_constraintTop_toTopOf="@+id/imageViewPapel"
         app:srcCompat="@drawable/tesoura_jogadorpeq" />
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="119dp"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEscolhaApp"
-        tools:context=".MainActivity">
-
-
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544~3347511713">
-
-        </com.google.android.gms.ads.AdView>
-
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/textViewEscolhaApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="541dp"
-        android:text="Escolha do App"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewEscolhaUser"
@@ -221,6 +180,47 @@
         android:textStyle="bold"
         ads:layout_constraintStart_toEndOf="@+id/textViewEscolhaApp"
         ads:layout_constraintTop_toTopOf="@+id/imageViewResultado" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="26dp"
+        android:background="@color/colorPrimary"
+        android:onClick="limpar"
+        android:text="Limpar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="119dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEscolhaApp"
+        tools:context=".MainActivity">
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3253976680799709/3224090601">
+
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
 
 
 </android.support.constraint.ConstraintLayout>
