@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         textViewUser = findViewById(R.id.textViewScoreUser);
 
 
-        //Configurando Banner Nativo1
-        MobileAds.initialize(this, "ca-app-pub-3253976680799709/7325011354");
+        //Configurando Banner
+        MobileAds.initialize(this, "ca-app-pub-3253976680799709/7650005488");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
