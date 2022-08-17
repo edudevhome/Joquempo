@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
+        android:contentDescription="Limpar"
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -36,6 +37,7 @@
         app:srcCompat="@drawable/padrao" />
 
     <ImageView
+        android:contentDescription="Pedra"
         android:id="@+id/imageViewPedra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,6 +51,7 @@
         app:srcCompat="@drawable/pedra_jogadorpeq" />
 
     <ImageView
+        android:contentDescription="Papel"
         android:id="@+id/imageViewPapel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,6 +66,7 @@
         app:srcCompat="@drawable/papel_jogadorpeq" />
 
     <ImageView
+        android:contentDescription="Tesoura"
         android:id="@+id/imageViewTesoura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
